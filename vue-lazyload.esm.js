@@ -1346,7 +1346,7 @@ var Lazy = function (Vue) {
         });
         freeList.forEach(function (item) {
           remove(_this7.ListenerQueue, item);
-          item.destroy();
+          item.$destroy();
         });
       }
       /**
